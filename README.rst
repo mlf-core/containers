@@ -1,7 +1,5 @@
-.. image:: images/480_100_trans.png
+.. image:: https://user-images.githubusercontent.com/21954664/84388841-84b4cc80-abf5-11ea-83f3-b8ce8de36e25.png
     :target: https://mlf-core.com
-    :width: 480
-    :height: 100
     :alt: mlf-core logo
         
 |
@@ -10,4 +8,4 @@
 mlfcore-containers
 ==========================
 
-This repository holds all containers, which are used for 
+This repository holds all containers, which are used as a basis for all mlflow templates.
