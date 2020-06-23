@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.2-base-ubuntu18.04
+FROM nvidia/cuda:10.2-devel-ubuntu18.04
 LABEL authors="Lukas Heumos (lukas.heumos@posteo.net)" \
       description="Docker image containing all requirements for running machine learning on CUDA enabled GPUs"
 
@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     git \
     bzip2 \
     libx11-6 \
+    build-essential \
  && rm -rf /var/lib/apt/lists/*
 
 # Create a working directory and set it as default
@@ -37,3 +38,9 @@ ENV CONDA_AUTO_UPDATE_CONDA=false
 
 # Update Conda
 RUN conda update conda
+
+# To get real time output we need to disable the stdout buffer
+ENV PYTHONUNBUFFERED 1
+
+# Enable colors
+ENV TERM xterm-256color
