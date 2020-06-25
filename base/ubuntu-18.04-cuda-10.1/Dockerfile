@@ -10,8 +10,9 @@ RUN apt-get update && apt-get install -y \
     sudo \
     git \
     bzip2 \
-    libx11-6 
-    build-essential \\
+    libx11-6 \
+    build-essential \
+    lshw \
  && rm -rf /var/lib/apt/lists/*
 
 # Create a working directory and set it as default
