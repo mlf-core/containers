@@ -8,4 +8,4 @@
 mlfcore-containers
 ==========================
 
-This repository holds all containers, which are used as a basis for all mlflow templates.
+This repository holds all base containers for all mlf-core templates and models
